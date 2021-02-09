@@ -1,0 +1,701 @@
+body, html {
+    height: 100%;
+}
+
+ul, p, div, button {
+		font-family: 'Noto Serif JP', sans-serif;
+
+}
+
+/* TABLE STYLE */
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+#t01 {
+    width: 100%;    
+}
+
+/*HEADER STYLE*/
+
+h1 {
+    text-align: center;
+    font-family: 'Monofett', cursive;
+    font-size: 5em;
+
+}
+
+h1 a{
+  color: black;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.header {
+    margin: 10px;
+}
+
+.headerLink {
+  text-decoration: none;
+}
+
+a {
+  color: #9933ff;
+}
+
+
+.wrapper {
+  text-align: center;
+  background-color: #cc91ff;
+  color: #fff;
+  padding: 15px;
+  font-size: 25px;
+  letter-spacing: 6px;
+  line-height: 2.2;
+  position: relative;
+  left: 0;
+  
+}
+
+
+.wrapper span.border p {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin: 0px;
+}
+
+.homePageBoxes {
+  display: inline-block;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: #cc91ff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 16px 2px;
+  cursor: pointer;
+  border: 2px solid #dfb5ff;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #cc91ff; /* Green */
+  color: white;
+}
+
+
+/* MENU STYLES */
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 8px 16px;
+}
+
+li, li a {
+	display: inline;
+	padding: 8px 16px;
+	text-align: center;
+}
+
+li a, .dropbtn {
+    color: #000;
+    text-decoration: none;
+}
+
+li a.active, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+	
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 38px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*---------*/
+
+body {
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  text-align: center;
+/*  position: -webkit-sticky; /* Safari */
+ /* position: sticky;*/
+  top: 0;
+  z-index: 1;
+
+}
+
+.topnav a {
+
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.activeMenu {
+    color: white !important;
+    background-color: #cc91ff;
+}
+
+.icon {
+  background-image: url('../images/menuIcon.png');
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#menu {
+  padding: 27px;
+  float: right;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+/*  .topnav.responsive {position: sticky;}*/
+  .topnav.responsive .icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* PARALLAX EFFECT */ 
+
+.parallax {
+    /* The image used */
+    background-image: url('../images/CoolMaddie.jpg');
+
+    /* Full height */
+    height: 65%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallaxFull {
+    /* The image used */
+    background-image: url('../images/CoolMaddie.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('../images/CoolMaddie.jpg');
+
+    /* Full height */
+    height: 35%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax2Zoomed {
+    /* The image used */
+    background-image: url('../images/CoolMaddie.jpg');
+
+    /* Full height */
+    height: 35%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax3 {
+    background-image: url('../images/nice.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax3short {
+    background-image: url('../images/nice.jpg');
+    height: 25%; 
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    }
+
+.parallaxShort {
+    background-image: url('../images/CelloSimple.jpg');
+    height: 35%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallaxShort2 {
+    background-image: url('../images/MaddieFave.jpg');
+    height: 35%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallaxShort3 {
+    background-image: url('../images/bbcMads.jpg');
+    height: 35%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+@media(max-width:600px){
+  .parallaxShort3 {
+    background-position: -600px;
+    background-size: 1100px;
+    background-attachment: unset;
+  }
+ 
+  .parallax3short {
+    /*background-position: -153px 50px;
+    background-size: 743px;*/
+    background-attachment: unset;
+  }
+
+  .parallaxShort2 {
+    background-position: -350px -146px;
+    background-size: 1250px;
+    background-attachment: unset;
+  }
+
+  .parallaxShort3 {
+    background-attachment: unset;
+    background-position: -600px -128px;
+  }
+
+  .parallax {
+    background-attachment: unset;
+  }
+
+  .parallaxFull {
+    background-attachment: unset;
+  }
+
+  .parallax2Zoomed {
+    background-attachment: unset;
+    background-size: unset;
+    background-position: -809px -284px;
+  }
+
+  .parallax2 {
+    background-attachment: unset;
+  }
+
+  .parallax3 {
+    background-attachment: unset;
+  }
+
+  .parallaxShort {
+    background-attachment: unset;
+  }
+
+}
+
+/* HOME PAGE CONTAINERS */ 
+
+.annaContainer {
+	position: relative;
+    text-align: center;
+    color: white;
+	background-color: white;
+	height: 500px;
+	width: 100%;
+	font-size: 3em;
+}
+
+
+
+.paraContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: white;
+    height: 500px;
+    width: 100%;
+    font-size: 3em;
+}
+
+.sessionContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url('../images/bbcMads.jpg');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: 60% 40%;
+    font-size: 3em;
+}
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ABOUT PAGE */
+
+.aboutMe {
+	position: relative;
+	background-color: white;
+	opacity: 0.8;
+	z-index: 0;
+  padding: 20px;
+
+}
+
+blockquote i {
+  font-size: 1.1em;
+}
+
+blockquote {
+  background-color: #ead1ff;
+  text-align: center;
+}
+
+.imageCredit {
+    bottom: 70px;
+    position: absolute;
+    right: 0;
+    background-color: #ead1ffa8;
+    font-size: 0.7em;
+    margin: 10px;
+} 
+
+/* VIDEOS PAGE */
+
+
+  .video-item {
+    margin-top: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+  }
+
+
+.video-item iframe, .video-item img {
+  right: 0;
+  bottom: 0;
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@supports (display: grid) {
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+@media(max-width:900px){
+  .video-grid {
+     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media(min-width:1500px){
+  .video-grid {
+     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+/* FOOTER */
+
+.socialLinksBarFooter {
+   position: fixed;
+   text-align: center;
+   color: white;
+   background-color: #f1f1f1;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 66px;
+}
+
+.socialLinksBarFooter a {
+  position: relative;
+  top: 2px;
+  display: inline-flex;
+  padding: 31px;
+}
+
+.mailIcon {
+  background-image: url("../images/mailIconBlack.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instaIcon {
+  background-image: url("../images/instaIconBlack.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitterIcon {
+  background-image: url("../images/twitterIconBlack.png");
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mailIcon:hover, .instaIcon:hover, .twitterIcon:hover {
+    opacity: 0.7;
+}
+
+/* BUTTONS */
+
+.btn {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #444;
+    color: white;
+    font-size: 1em;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.btn:hover {
+    background-color: black;
+}
+
+
+/* BLOCKS */
+
+.twoTone {
+  position: relative;
+  opacity: 0.8;
+  z-index: 0;
+  padding: 20px;
+  /*background: linear-gradient(to left, #ffebcc  24%,white 60%,#000000 39%,white 8%,white 101%); */
+}
+
+.blockRapperL {
+  margin: 0px; 
+  display: inline-block; 
+  width: 49%;
+  vertical-align: top;
+  text-align: center;
+}
+
+.blockRapperR {
+  margin: 0px; 
+  display: inline-block; 
+  width: 49%;
+  vertical-align: top;
+  text-align: center;
+}
+
+  @media screen and (max-width: 600px) {
+      .blockRapperR {
+          display: block;
+          width: 100%;
+      }
+      .blockRapperL {
+          width: 100%;
+      }
+    }
+
+.caption {
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.border a {
+  text-decoration: none;
+  color: white;
+}
+
+.caption span.border, .captionHome span.border, .captionContact span.border {
+    background-color: #cc91ff;
+    color: #fff;
+    padding: 22px;
+    font-size: 25px;
+    letter-spacing: 6px;
+    line-height: 2.2;
+}
+
+.captionContact span.border {
+    background-color: #cc91ff;
+    color: #fff;
+    padding: 22px;
+    font-size: 25px;
+    letter-spacing: 6px;
+    word-break: break-all;
+    line-height: 2.2;
+}
+
+.captionHome {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.captionContact {
+    position: relative;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+
