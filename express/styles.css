@@ -48,13 +48,13 @@ h3 {
 }
 
 a {
-  color: #9933ff;
+  color: #e68917;
 }
 
 
 .wrapper {
   text-align: center;
-  background-color: #cc91ff;
+  background-color: #e68917;
   color: #fff;
   padding: 15px;
   font-size: 25px;
@@ -80,7 +80,7 @@ a {
 button {
   background-color: white;
   border: none;
-  color: #cc91ff;
+  color: #e68917;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -88,13 +88,13 @@ button {
   font-size: 16px;
   margin: 16px 2px;
   cursor: pointer;
-  border: 2px solid #dfb5ff;
+  border: 2px solid #fff4b5;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
 }
 
 button:hover {
-  background-color: #cc91ff; /* Green */
+  background-color: #e68917; /* Green */
   color: white;
 }
 
@@ -219,7 +219,7 @@ body {
 
 .activeMenu {
     color: white !important;
-    background-color: #cc91ff;
+    background-color: #e68917;
 }
 
 .icon {
@@ -237,10 +237,6 @@ body {
 .topnav .icon {
   display: none;
 }
-
-
-
-
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -264,63 +260,45 @@ body {
   }
 }
 
-/* PARALLAX EFFECT */ 
-
 .parallax {
-    /* The image used */
-    background-image: url('./images/CoolMaddie.jpg');
-
-    /* Full height */
+    background-image: url('./images/main-maddie.jpeg');
     height: 65%; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 75%;
+    background-position: 0 35%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
+.parallax.work {
+  background-position: 0 20%;
+}
+
 .parallaxFull {
-    /* The image used */
-    background-image: url('./images/CoolMaddie.jpg');
-
-    /* Full height */
+    background-image: url('./images/main-maddie.jpeg');
     height: 100%; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 75%;
+    background-position: 0 20%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
 .parallax2 {
-    /* The image used */
     background-image: url('./images/CoolMaddie.jpg');
-
-    /* Full height */
     height: 35%; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 75%;
+    background-position: 0 9%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
 .parallax2Zoomed {
-    /* The image used */
-    background-image: url('./images/CoolMaddie.jpg');
-
-    /* Full height */
+    background-image: url('./images/main-maddie.jpeg');
     height: 35%; 
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 75%;
+    background-position: 0 35%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -385,8 +363,6 @@ body {
   }
  
   .parallax3short {
-    /*background-position: -153px 50px;
-    background-size: 743px;*/
     background-attachment: unset;
   }
 
@@ -403,6 +379,11 @@ body {
 
   .parallax {
     background-attachment: unset;
+    background-position-y: 100%;
+  }
+
+  .parallax.work {
+    background-position-y: 100%;
   }
 
   .parallaxFull {
@@ -413,6 +394,7 @@ body {
     background-attachment: unset;
     background-size: unset;
     background-position: -809px -284px;
+    height: 8px;
   }
 
   .parallax2 {
@@ -663,7 +645,7 @@ a
 }
 
 .caption span.border, .captionHome span.border, .captionContact span.border {
-    background-color: #cc91ff;
+    background-color: #e68917;
     color: #fff;
     padding: 22px;
     font-size: 25px;
@@ -672,13 +654,14 @@ a
 }
 
 .captionContact span.border {
-    background-color: #cc91ff;
+    background-color: #e68917;
     color: #fff;
     padding: 22px;
     font-size: 25px;
     letter-spacing: 6px;
     word-break: break-all;
     line-height: 2.2;
+    border-radius: 5px;
 }
 
 .captionHome {
@@ -699,7 +682,35 @@ a
     color: #000;
 }
 
+@media(max-width:600px) {
+  .captionContact span.border {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 12px;
+
+  }
+  .blockRapperR {
+    margin-bottom: 16px;
+  }
+
+  .copyButton img {
+    width: 25px;
+  }
+}
+
 .loading {
   display: block;
   padding: 25%;
+}
+
+.copyButton {
+  vertical-align: middle;
+  padding: 5px 0 0 0;
+  margin: 0 0 5px 5px;
+  border-radius: 5px;
+  border: beige;
+}
+
+.copyButton:hover {
+  background-color: beige;
 }
