@@ -379,11 +379,11 @@ body {
 
   .parallax {
     background-attachment: unset;
-    background-position-y: 100%;
+    background-position-y: 75%;
   }
 
   .parallax.work {
-    background-position-y: 100%;
+    background-position-y: 75%;
   }
 
   .parallaxFull {
@@ -395,6 +395,7 @@ body {
     background-size: unset;
     background-position: -809px -284px;
     height: 8px;
+    background-color: black;
   }
 
   .parallax2 {
@@ -713,4 +714,8 @@ a
 
 .copyButton:hover {
   background-color: beige;
+}
+
+.copyButton:active {
+  background-color: orange;
 }
