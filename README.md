@@ -10,3 +10,9 @@ A place to showcase the brilliance of Mabbie Cuttler
 ```
 git subtree push --prefix express origin gh-pages
 ```
+
+if that fails then:
+
+```
+git push origin `git subtree split --prefix express master`:gh-pages --force
+```
