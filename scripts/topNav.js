@@ -1,32 +1,27 @@
-function TopNav() {
-    var x = document.getElementById("topnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } 
-    else if (x.className === "topnav sticky") {
-    	x.className = "topnav responsive sticky";
-    }
-    else if (x.className === "topnav responsive sticky") {
-    	x.className = "topnav sticky";
-    }
-
-    else {
-        x.className = "topnav";
-    }
-}
-
-  
-window.onscroll = function() {stickyNav()};
-
 var topnav = document.getElementById("topnav");
 var sticky = topnav.offsetTop;
+
+function TopNav() {
+    if (topnav.className === "topnav") {
+      topnav.className += " responsive";
+    }
+    else if (topnav.className === "topnav sticky") {
+      topnav.className = "topnav responsive sticky";
+    }
+    else if (topnav.className === "topnav responsive sticky") {
+      topnav.className = "topnav sticky";
+    }
+    else {
+      topnav.className = "topnav";
+    }
+}
 
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
     topnav.classList.add("sticky")
-    topnav.responsive.classList.add("sticky")
   } else {
     topnav.classList.remove("sticky");
-    topnav.responsive.classList.remove("sticky")
   }
 }
+
+window.onscroll = () => stickyNav();

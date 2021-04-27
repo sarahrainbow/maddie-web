@@ -15,16 +15,13 @@ th, td {
     vertical-align: top;
 }
 #t01 {
-    width: 100%;    
+    width: 100%;
 }
 
 /*HEADER STYLE*/
 
 h1 {
     text-align: center;
-    font-family: 'Monofett', cursive;
-    font-size: 5em;
-
 }
 
 h1 a{
@@ -40,7 +37,11 @@ h3 {
 }
 
 .header {
-    margin: 10px;
+  margin: 10px;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 5em;
+  letter-spacing: 0.3rem;
+  line-height: 5rem;
 }
 
 .headerLink {
@@ -62,7 +63,7 @@ a {
   line-height: 2.2;
   position: relative;
   left: 0;
-  
+
 }
 
 
@@ -134,7 +135,7 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
-	
+
 
 li.dropdown {
     display: inline-block;
@@ -262,7 +263,7 @@ body {
 
 .parallax {
     background-image: url('./images/main-maddie.jpeg');
-    height: 65%; 
+    height: 65%;
     background-attachment: fixed;
     background-position: 0 35%;
     background-repeat: no-repeat;
@@ -276,7 +277,7 @@ body {
 
 .parallaxFull {
     background-image: url('./images/main-maddie.jpeg');
-    height: 100%; 
+    height: 100%;
     background-attachment: fixed;
     background-position: 0 20%;
     background-repeat: no-repeat;
@@ -286,7 +287,7 @@ body {
 
 .parallax2 {
     background-image: url('./images/CoolMaddie.jpg');
-    height: 35%; 
+    height: 35%;
     background-attachment: fixed;
     background-position: 0 9%;
     background-repeat: no-repeat;
@@ -296,7 +297,7 @@ body {
 
 .parallax2Zoomed {
     background-image: url('./images/main-maddie.jpeg');
-    height: 35%; 
+    height: 35%;
     background-attachment: fixed;
     background-position: 0 35%;
     background-repeat: no-repeat;
@@ -306,7 +307,7 @@ body {
 
 .parallax3 {
     background-image: url('./images/nice.jpg');
-    height: 100%; 
+    height: 100%;
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -316,7 +317,7 @@ body {
 
 .parallax3short {
     background-image: url('./images/nice.jpg');
-    height: 25%; 
+    height: 25%;
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -327,7 +328,7 @@ body {
 
 .parallaxShort {
     background-image: url('./images/CelloSimple.jpg');
-    height: 35%; 
+    height: 35%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -337,7 +338,7 @@ body {
 
 .parallaxShort2 {
     background-image: url('./images/MaddieFave.jpg');
-    height: 35%; 
+    height: 35%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -347,7 +348,7 @@ body {
 
 .parallaxShort3 {
     background-image: url('./images/bbcMads.jpg');
-    height: 35%; 
+    height: 35%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -361,7 +362,7 @@ body {
     background-size: 1100px;
     background-attachment: unset;
   }
- 
+
   .parallax3short {
     background-attachment: unset;
   }
@@ -392,6 +393,7 @@ body {
 
   .parallax2Zoomed {
     background-attachment: unset;
+    background-image: none;
     background-size: unset;
     background-position: -809px -284px;
     height: 8px;
@@ -412,7 +414,7 @@ body {
 
 }
 
-/* HOME PAGE CONTAINERS */ 
+/* HOME PAGE CONTAINERS */
 
 .annaContainer {
 	position: relative;
@@ -470,8 +472,9 @@ blockquote i {
 }
 
 blockquote {
-  background-color: #ead1ff;
+  background-color: #e6881763;
   text-align: center;
+  border-radius: 5px;
 }
 
 .imageCredit {
@@ -481,7 +484,7 @@ blockquote {
     background-color: #ead1ffa8;
     font-size: 0.7em;
     margin: 10px;
-} 
+}
 
 /* VIDEOS PAGE */
 
@@ -513,7 +516,7 @@ blockquote {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  
+
 @media(max-width:900px){
   .video-grid {
      grid-template-columns: repeat(1, 1fr);
@@ -605,16 +608,17 @@ a
 }
 
 .blockRapperL {
-  margin: 0px; 
-  display: inline-block; 
+  margin: 0px;
+  display: inline-block;
   width: 49%;
   vertical-align: top;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .blockRapperR {
-  margin: 0px; 
-  display: inline-block; 
+  margin: 0px;
+  display: inline-block;
   width: 49%;
   vertical-align: top;
   text-align: center;
@@ -624,7 +628,9 @@ a
     .blockRapperR {
         display: block;
         width: 100%;
+        margin-bottom: 16px;
     }
+
     .blockRapperL {
         width: 100%;
     }
@@ -690,9 +696,6 @@ a
     padding: 12px;
 
   }
-  .blockRapperR {
-    margin-bottom: 16px;
-  }
 
   .copyButton img {
     width: 25px;
@@ -718,4 +721,10 @@ a
 
 .copyButton:active {
   background-color: orange;
+}
+
+.work__covid-update {
+  border: 5px solid #e68817;
+  text-align: center;
+  padding: 1rem;
 }
